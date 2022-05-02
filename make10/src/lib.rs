@@ -129,8 +129,8 @@ mod tests {
         assert_eq!(calc_rpn("374/-8*"), Ok((3. - 7. / 4.) * 8.));
         assert_eq!(calc_rpn("57*55*-"), Ok(5. * 7. - 5. * 5.));
 
-        assert_eq!(calc_rpn("*/"), Err("parse error"));
-        assert_eq!(calc_rpn("abcd"), Err("parse error"));
+        assert_eq!(calc_rpn("*/"), Err("calculate error"));
+        assert_eq!(calc_rpn("abcd"), Err("calculate error"));
     }
 
     #[test]
